@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir -p /usr/local/bin &&
+cp ./gitsafe /usr/local/bin/gitsafe &&
+chmod 755 /usr/local/bin/gitsafe &&
+printf "\033[00;32mDONE!\033[00m Be sure to add \"alias git=gitsafe\" to your .bashrc or\nequivalent. Make sure this is the only alias to git. hub also\nrequires an alias to git, however you should replace that with\ngitsafe If hub is installed on your system, gitsafe will\ncall to that instead of plain git.\n"
